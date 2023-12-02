@@ -15,7 +15,7 @@ yarn add @codebayu/use-hydration-zustand
 ## Usage
 
 ```tsx
-import { useHydration } from '@codebayu/use-hydration-zustand';
+import { useHydrationZustand } from '@codebayu/use-hydration-zustand';
 import create from 'zustand';
 
 // Your Zustand store
@@ -24,8 +24,8 @@ const useStore = create((set) => ({
 }));
 
 function MyComponent() {
-  // Use the useHydration hook
-  const isHydrated = useHydration(useStore);
+  // Use the useHydrationZustand hook
+  const isHydrated = useHydrationZustand(useStore);
 
   return (
     <div>
@@ -40,8 +40,7 @@ export default MyComponent;
 
 ## API
 
-`useHydration(store)`
-
+`useHydrationZustand(store)`
 A hook for Zustand that simplifies hydration handling.
 
 Parameters
