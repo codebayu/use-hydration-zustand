@@ -1,6 +1,6 @@
 {
   "name": "@codebayu/use-hydration-zustand",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook for handle the persist state of zustand",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,6 +24,9 @@
     "url": "https://github.com/Bayusetiawan45/use-hydration-zustand/issues"
   },
   "homepage": "https://github.com/Bayusetiawan45/use-hydration-zustand#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
   "devDependencies": {
     "@types/react": "^18.2.40",
     "react": "^18.2.0",

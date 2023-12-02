@@ -47,7 +47,9 @@ A hook for Zustand that simplifies hydration handling.
 Parameters
 
 - `store (UseBoundStore<any>)`: The Zustand store.
-  Returns
+
+Returns
+
 - `boolean`: true if the store has finished hydration, false otherwise.
 
 ## License
