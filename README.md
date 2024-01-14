@@ -1,6 +1,6 @@
 # @codebayu/use-hydration-zustand
 
-A React Hook for Zustand state management library to simplify hydration handling.
+A React Custom Hook for Zustand state management library to simplify hydration handling.
 
 ## Installation
 
@@ -29,8 +29,11 @@ function MyComponent() {
 
   return (
     <div>
-      <p>Is Hydrated: {isHydrated ? 'Yes' : 'No'}</p>
-      {/* Your component code here */}
+      {isHydrated ? (
+        items.map((item) => <Card {...item} key={item.id} />)
+      ) : (
+        <Loading />
+      )}
     </div>
   );
 }
